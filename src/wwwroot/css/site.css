@@ -47,8 +47,8 @@ for details on configuring this project to bundle and minify static web assets. 
 
 a.navbar-brand {
     white-space: normal;
-    font-family: 'Yellowtail', cursive;
-    font-size: xx-large;
+/*    font-family: 'Yellowtail', cursive;
+    font-size: xx-large;*/
     text-align: center;
     word-break: break-all;
 }
@@ -142,4 +142,37 @@ ul {
     background: -o-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
     background: -moz-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
     background: linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
+}
+
+/* CSS CODE https://www.c-sharpcorner.com/UploadFile/2072a9/responsive-web-design-using-media-queries/ */
+@media screen and (max-width: 920px) {  
+  body {  
+      background-color: red;  
+  }  
+}  
+
+@media screen and (max-width: 720px) {  
+  body {  
+      background-color: orange;  
+  }  
+}  
+
+@media screen and (max-width: 540px) {  
+  body {  
+      background-color: yellow;  
+  }  
+}  
+
+@media screen and (max-width: 320px) {  
+  body {  
+      background-color: green;  
+  }  
+} 
+
+/*CSS https://css-tricks.com/a-complete-guide-to-css-media-queries/ */
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color:white;
+  }
 }
